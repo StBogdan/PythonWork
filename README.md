@@ -12,6 +12,7 @@
 - [Primer](https://github.com/donnemartin/system-design-primer)
 - [Interview questions](https://github.com/checkcheckzz/system-design-interview)
 - [Cheatsheet](https://gist.github.com/vasanthk/485d1c25737e8e72759f)
+- [Text for Envelopes](https://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/)
 
 ### This, but for:
 - [Java](https://github.com/StBogdan/Java-HackerRank)
