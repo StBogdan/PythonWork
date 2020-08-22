@@ -14,13 +14,12 @@ class Solution:
             candies_acc += candies[c_box]
 
             sub_box_set = set(containedBoxes[c_box])
-            q.extend(x for x in sub_box_set if status[x]) # Add open boxes
+            q.extend(x for x in sub_box_set if status[x])  # Add open boxes
 
             for key in keys[c_box]:
                 status[key] = 1
 
-
-            locked_boxs.update(x for x in sub_box_set if not status[x]) # Remember locked boxes
+            locked_boxs.update(x for x in sub_box_set if not status[x])  # Remember locked boxes
 
             locked_boxs = [x for x in locked_boxs if not status[x]]
             q.extend(x for x in locked_boxs if status[x])
