@@ -2,6 +2,23 @@
 - Programming exercises repository for algorithmic problems, done in Python 3
 - Code quality varies, there's stuff here before I knew I could auto-format code
 
+
+## Contents
+
+### CodeForces
+| Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
+|:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
+| 1287A 	| [Angry Students](https://codeforces.com/problemset/problem/1287/A) 	|  	| A 	|  	|  	|  	|
+
+### HackerRank
+Problems related to the [Python tag](https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python)
+
+### Leetcode
+
+| Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
+|:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
+| 1283A 	| [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) 	| [Python](./Leetcode/1283A.py) 	| Medium 	|  	|  	|  	|
+
 ## Links
 
 ### Algorithms
