@@ -17,7 +17,8 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 
 | Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
-| 1283A 	| [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) 	| [Python](./Leetcode/1283A.py) 	| Medium 	|  	|  	|  	|
+| 1283 	| [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) 	| [Python](./Leetcode/1283.py) 	| Medium 	|  	|  	|  	|
+| 253 	| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) 	| [Python](./Leetcode/253.py) 	| Medium 	| O(n*log(n)) 	| O(n) 	|  	|
 
 ## Links
 
