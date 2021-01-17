@@ -1,5 +1,6 @@
 from typing import List
 
+# Link: https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
 # Method: Find max and count
 # Time: O(n)
 # Space: O(1)

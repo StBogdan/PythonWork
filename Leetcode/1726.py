@@ -1,5 +1,6 @@
 from typing import DefaultDict, List, Tuple
 
+# Link: https://leetcode.com/problems/tuple-with-same-product/
 # Method: Counter of previous products
 # Time: O(n^2)
 # Sapce: O(n^2)
