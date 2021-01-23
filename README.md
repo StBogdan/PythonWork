@@ -19,10 +19,10 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
 | 253 	| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) 	| [Python](./Leetcode/253.py) 	| Medium 	| O(n*log(n)) 	| O(n) 	|  	|
 | 1283 	| [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) 	| [Python](./Leetcode/1283.py) 	| Medium 	|  	|  	|  	|
-| 1725 	| [Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) 	| [Python](./Leetcode/1725.py) 	| Easy 	| O(n) 	| O(1) 	|  	|
+| 1548 | [The Most Similar Path in a Graph](https://leetcode.com/problems/the-most-similar-path-in-a-graph/) 	| [Python](./Leetcode/1548.py) 	| Hard 	| O(n*m\*E) 	| O(n\*m) 	|  	|
+| 1725 	| [Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) 	| [Python](./Leetcode/1725.py) 	| Easy 	| O(n) 	| O(1) 	|  	
 | 1726 	| [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) 	| [Python](./Leetcode/1726.py) 	| Medium 	| O(n^2) 	| O(n^2) 	|  	|
 | 1727 	| [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) 	| [Python](./Leetcode/1727.py) 	| Medium 	|  O(n\*m\*log(m)) 	| O(n*m) 	|  	|
-
 <!-- | abcd | [Example problem name](https://leetcode.com/problems/example-problem-name) 	| [Python](./Leetcode/abcd.py) 	| Medium 	| O(n) 	| O(n) 	|  	| -->
 
 
@@ -32,6 +32,9 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 - [CP-Algorithms](https://cp-algorithms.com/)
 - [Training roadmap, Codeforces](https://codeforces.com/blog/entry/65133)
 - [Awesome Competitive Programming](https://github.com/lnishan/awesome-competitive-programming/blob/master/README.md)
+
+#### Problem lists
+- [Blind Curate 75](https://leetcode.com/list/xoqag3yj/)
 
 ### System Design
 - [Primer](https://github.com/donnemartin/system-design-primer)
