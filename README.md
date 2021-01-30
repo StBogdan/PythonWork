@@ -32,6 +32,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 - [CP-Algorithms](https://cp-algorithms.com/)
 - [Training roadmap, Codeforces](https://codeforces.com/blog/entry/65133)
 - [Awesome Competitive Programming](https://github.com/lnishan/awesome-competitive-programming/blob/master/README.md)
+- [Competitive Programmer's Handbook][https://cses.fi/book/index.php]
 
 #### Problem lists
 - [Blind Curate 75](https://leetcode.com/list/xoqag3yj/)
