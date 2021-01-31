@@ -23,6 +23,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 | 1725 	| [Number Of Rectangles That Can Form The Largest Square](https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/) 	| [Python](./Leetcode/1725.py) 	| Easy 	| O(n) 	| O(1) 	|  	
 | 1726 	| [Tuple with Same Product](https://leetcode.com/problems/tuple-with-same-product/) 	| [Python](./Leetcode/1726.py) 	| Medium 	| O(n^2) 	| O(n^2) 	|  	|
 | 1727 	| [Largest Submatrix With Rearrangements](https://leetcode.com/problems/largest-submatrix-with-rearrangements/) 	| [Python](./Leetcode/1727.py) 	| Medium 	|  O(n\*m\*log(m)) 	| O(n*m) 	|  	|
+
 <!-- | abcd | [Example problem name](https://leetcode.com/problems/example-problem-name) 	| [Python](./Leetcode/abcd.py) 	| Medium 	| O(n) 	| O(n) 	|  	| -->
 
 
@@ -32,7 +33,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 - [CP-Algorithms](https://cp-algorithms.com/)
 - [Training roadmap, Codeforces](https://codeforces.com/blog/entry/65133)
 - [Awesome Competitive Programming](https://github.com/lnishan/awesome-competitive-programming/blob/master/README.md)
-- [Competitive Programmer's Handbook][https://cses.fi/book/index.php]
+- [Competitive Programmer's Handbook](https://cses.fi/book/index.php)
 
 #### Problem lists
 - [Blind Curate 75](https://leetcode.com/list/xoqag3yj/)
