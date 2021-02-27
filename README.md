@@ -17,6 +17,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 
 | Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
+| 98  | [ Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) 	| [Python](./Leetcode/98.py) 	| Medium 	| O(n) 	| O(depth) 	|  	|
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) 	| [Python](./Leetcode/188.py) 	| Hard 	| O(n\*k) 	| O(n\*k) 	|  	|
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) 	| [Python](./Leetcode/239.py) 	| Hard 	| O(n) 	| O(n) 	|  	| 
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) 	| [Python](./Leetcode/253.py) 	| Medium 	| O(n*log(n)) 	| O(n) 	|  	|
