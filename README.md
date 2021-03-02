@@ -47,7 +47,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 - [Competitive Programmer's Handbook](https://cses.fi/book/index.php)
 
 #### Problem lists
-- [Blind Curate 75](https://leetcode.com/list/xoqag3yj/)
+- [Blind Curated 75](https://leetcode.com/list/xoqag3yj/)
 
 ### System Design
 - [Primer](https://github.com/donnemartin/system-design-primer)
