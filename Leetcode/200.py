@@ -1,29 +1,34 @@
 from typing import List
 
+# Method: Traverse islands, mark as null
+# Time: O(n*m)
+# Space: O(n*m)
+
+DIRS = [[0, 1], [0, -1], [-1, 0], [1, 0]]
 
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
-        directions = [[0, 1], [0, -1], [-1, 0], [1, 0]]
+        if not grid:
+            return 0
+        n = len(grid)
+        m = len(grid[0])
 
-        def exp_isle(i, j):
-            if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]):
-                return
-            print(f"Checking {i} {j}")
-            if grid[i][j] == "1":
-                grid[i][j] = "2"
-                for oi, oj in directions:
-                    exp_isle(i + oi, j + oj)
+        def explore_isle(i, j):
+            grid[i][j] = '2'
+            for oi, oj in DIRS:
+                i2 = i+oi
+                j2 = j+oj
+                if not (i2 < 0 or j2 < 0 or i2 >= n or j2 >= m) \
+                        and grid[i2][j2] == '1':
+                    explore_isle(i2, j2)
 
         isles = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                print(f"Now at {i} {j} w/ val {grid[i][j]}")
-                if grid[i][j] == "1":
-                    print(f"Isle at {i} {j}")
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] == '1':
+                    explore_isle(i, j)
                     isles += 1
-                    exp_isle(i, j)
         return isles
-
 
 if __name__ == "__main__":
     a = [['1', '1', '0', '1', '0'],
