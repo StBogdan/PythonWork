@@ -19,11 +19,13 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
 | 3   | [Longest Substring Without Repeating Characterse](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 	            | [Python](./Leetcode/3.py) 	| Medium | O(n) 	| O(n) 	|  	| 
 | 98  | [ Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) 	                                                    | [Python](./Leetcode/98.py) 	| Medium | O(n) 	| O(depth) 	|  	|
+| 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                     | [Python](./leetcode/124.py)   | Hard   | O(n)     | O(d) | |
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) 	                                    | [Python](./Leetcode/188.py) 	| Hard 	 | O(n\*k) 	| O(n\*k) 	|  	|
 | 200 | [Number of islands](https://leetcode.com/problems/number-of-islands/) 	                                                                        | [Python](./Leetcode/200.py) 	| Medium | O(n\*m) 	| O(n\*m) 	|  	| 
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) 	                                                            | [Python](./Leetcode/239.py) 	| Hard 	 | O(n) 	| O(n) 	|  	| 
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) 	                                                                        | [Python](./Leetcode/253.py) 	| Medium | O(n*log(n)) 	| O(n) 	|  	|
 | 259 | [ 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) 	                                                                                | [Python](./Leetcode/259.py) 	| Medium | O(n^2) 	| O(n) 	|  	| 
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                 | [Python](./Leetcode/268.py)   | Easy | O(n) | O(1) | |
 | 460 | [LFU Cache](https://leetcode.com/problems/lfu-cache/) 	                                                                                        | [Python](./Leetcode/460.py) 	| Hard 	 | O(1) 	| O(n) 	| Design Problem 	|
 | 588 | [Design In-Memory File Systeme](https://leetcode.com/problems/design-in-memory-file-system/) 	                                                | [Python](./Leetcode/588.py) 	| Hard 	 | - 	| - 	| Design problem 	|
 | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) 	                                                            | [Python](./Leetcode/829.py) 	| Hard 	 | O(n^(1/2)) 	| O(1) 	|  	|
@@ -50,6 +52,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 
 #### Problem lists
 - [Blind Curated 75](https://leetcode.com/list/xoqag3yj/)
+    - [Current progress](./blind_curated75.md)
 
 ### System Design
 - [Primer](https://github.com/donnemartin/system-design-primer)
