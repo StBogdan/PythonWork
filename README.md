@@ -19,6 +19,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
 | 3   | [Longest Substring Without Repeating Characterse](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 	            | [Python](./Leetcode/3.py) 	| Medium | O(n) 	| O(n) 	|  	| 
 | 98  | [ Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) 	                                                    | [Python](./Leetcode/98.py) 	| Medium | O(n) 	| O(depth) 	|  	|
+| 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) 	                    | [Python](./Leetcode/116.py) 	| Medium | O(n) 	| O(depth) 	|  	| 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                     | [Python](./leetcode/124.py)   | Hard   | O(n)     | O(d) | |
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) 	                                    | [Python](./Leetcode/188.py) 	| Hard 	 | O(n\*k) 	| O(n\*k) 	|  	|
 | 200 | [Number of islands](https://leetcode.com/problems/number-of-islands/) 	                                                                        | [Python](./Leetcode/200.py) 	| Medium | O(n\*m) 	| O(n\*m) 	|  	| 
