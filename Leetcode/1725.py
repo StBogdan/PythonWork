@@ -1,6 +1,8 @@
 from typing import List
 
+# Name: Number Of Rectangles That Can Form The Largest Square
 # Link: https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/
+# Difficulty: Easy
 # Method: Find max and count
 # Time: O(n)
 # Space: O(1)
