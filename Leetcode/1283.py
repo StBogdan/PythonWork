@@ -4,9 +4,6 @@ from typing import List
 
 import math
 
-import math
-
-
 class Solution:
     def smallestDivisor(self, nums: List[int], t: int) -> int:
         lowbound = sum(int(num / t) for num in nums)
@@ -34,7 +31,7 @@ class Solution:
 
 
 if __name__ == '__main__':
-    g, t = [962551,933661,905225,923035,990560], 10
+    g, t = [962551, 933661, 905225, 923035, 990560], 10
 
     sol = Solution()
     print(sol.smallestDivisor(g, t))
