@@ -3,8 +3,8 @@ from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        arr = sorted(nums)
-        n = len(arr)
+        sorted_arr = sorted(nums)
+        n = len(sorted_arr)
         combos = set()
         for i in range(n):
             # 2sum with pointers
@@ -12,13 +12,13 @@ class Solution:
             right = n - 1
 
             while left < i < right:
-                c2s = arr[left] + arr[i] + arr[right]
-                if c2s > 0:
+                sum_now = sorted_arr[left] + sorted_arr[i] + sorted_arr[right]
+                if sum_now > 0:
                     right -= 1
-                elif c2s < 0:
+                elif sum_now < 0:
                     left += 1
                 else:
-                    combos.add((arr[left], arr[i], arr[right]))
+                    combos.add((sorted_arr[left], sorted_arr[i], sorted_arr[right]))
                     left += 1
 
         return [list(tpl) for tpl in combos]
