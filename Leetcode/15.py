@@ -24,12 +24,9 @@ class Solution:
         return [list(tpl) for tpl in combos]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums1 = [-1, 0, 1, 2, -1, -4]
-    ans1 = [
-        [-1, 0, 1],
-        [-1, -1, 2]
-    ]
+    ans1 = [[-1, 0, 1], [-1, -1, 2]]
 
     nums2 = [3, 0, -2, -1, 1, 2]
 

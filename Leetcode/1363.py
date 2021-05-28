@@ -12,7 +12,7 @@ class Solution:
         return abs(delta.days)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     assert 1 == sol.days_between_dates("2019-06-29", "2019-06-30")
     assert 15 == sol.days_between_dates("2020-01-15", "2019-12-31")

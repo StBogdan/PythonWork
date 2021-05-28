@@ -6,10 +6,9 @@ from collections import defaultdict
 # Time: O(1) for getting and setting
 # Space: O(n)-ish
 
+
 class Node:
-    def __init__(self,
-                 key: int, val: int,
-                 prev_node=None, next_node=None):
+    def __init__(self, key: int, val: int, prev_node=None, next_node=None):
         self.key = key
         self.val = val
         self.counter = 1
@@ -18,7 +17,6 @@ class Node:
 
 
 class DoubleLinkedList:
-
     def __init__(self):
         self.size = 0
         self.sentinel = Node(0, 0)
@@ -49,7 +47,6 @@ class DoubleLinkedList:
 
 
 class LFUCache:
-
     def __init__(self, capacity: int):
         self._nodes = {}
         self.capacity = capacity
@@ -97,11 +94,10 @@ class LFUCache:
 
 
 class TestLFU(unittest.TestCase):
-
     def test_example(self):
         cache = LFUCache(5)
         for i in range(20):
-            cache.put(i % 5, i*10)
+            cache.put(i % 5, i * 10)
 
         for i in range(20):
             print(f" {i} is val: {cache.get(i%5)}")
@@ -120,20 +116,28 @@ class TestLFU(unittest.TestCase):
 
     def test_lc2(self):
         cache = LFUCache(3)
-        cmds = ["put", "put", "get", "get", "get",
-                "put", "put", "get", "get", "get", "get"]
-        args = [[2, 2], [1, 1], [2], [1], [2],
-                [3, 3], [4, 4], [3], [2], [1], [4]]
-        rez = [cache.__getattribute__(cmd)(*arg)
-               for cmd, arg in zip(cmds, args)]
+        cmds = [
+            "put",
+            "put",
+            "get",
+            "get",
+            "get",
+            "put",
+            "put",
+            "get",
+            "get",
+            "get",
+            "get",
+        ]
+        args = [[2, 2], [1, 1], [2], [1], [2], [3, 3], [4, 4], [3], [2], [1], [4]]
+        rez = [cache.__getattribute__(cmd)(*arg) for cmd, arg in zip(cmds, args)]
         self.assertListEqual(rez, [None, None, 2, 1, 2, None, None, -1, 2, 1, 4])
 
     def test_midgap_remove(self):
         cache = LFUCache(3)
         cmds = ["put", "put", "put", "put", "put", "get", "get"]
         args = [[10, 10], [10, 10], [10, 10], [3, 30], [3, 40], [10], [2]]
-        rez = [cache.__getattribute__(cmd)(*arg)
-               for cmd, arg in zip(cmds, args)]
+        rez = [cache.__getattribute__(cmd)(*arg) for cmd, arg in zip(cmds, args)]
         self.assertListEqual(rez, [None, None, None, None, None, 10, -1])
 
 

@@ -26,12 +26,9 @@ class Solution:
 
         return total_nice
 
+
 if __name__ == "__main__":
-    exs = [
-        ([1,1,2,1,1], 3),
-        ([2,4,6], 1),
-        ([2,2,2,1,2,2,1,2,2,2],2)
-    ]
+    exs = [([1, 1, 2, 1, 1], 3), ([2, 4, 6], 1), ([2, 2, 2, 1, 2, 2, 1, 2, 2, 2], 2)]
     sol = Solution()
     for arr, k in exs:
         res = sol.numberOfSubarrays(arr, k)

@@ -32,7 +32,6 @@ class Solution:
 
 
 class TestSolution(unittest.TestCase):
-
     def setUp(self):
         self.sol = Solution()
 

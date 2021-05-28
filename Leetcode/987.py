@@ -23,24 +23,26 @@ class Solution:
 
         queue = deque()
         queue.append((root, 0, 0))
-        while queue: # BFS traversal
+        while queue:  # BFS traversal
             node, row, col = queue.popleft()
 
             # Keep track of width
             min_col = min(col, min_col)
             max_col = max(col, max_col)
             cols[col][row].append(node.val)
-            print(f"Looking at val {node.val=} at {row=} {col=}, "
-                f"now know of {cols[col]}")
-            
+            print(
+                f"Looking at val {node.val=} at {row=} {col=}, "
+                f"now know of {cols[col]}"
+            )
+
             # Add children
             if node.left:
-                queue.append((node.left, row+1, col-1))
+                queue.append((node.left, row + 1, col - 1))
             if node.right:
-                queue.append((node.right, row+1, col+1))
+                queue.append((node.right, row + 1, col + 1))
 
         ans = []
-        for col in range(min_col, max_col+1):
+        for col in range(min_col, max_col + 1):
             col_vals = []
             for row_list in cols[col].values():
                 col_vals += sorted(row_list)

@@ -2,7 +2,9 @@ from typing import List
 
 
 class Solution:
-    def reconstructMatrix(self, upper: int, lower: int, colsum: List[int]) -> List[List[int]]:
+    def reconstructMatrix(
+        self, upper: int, lower: int, colsum: List[int]
+    ) -> List[List[int]]:
         n = len(colsum)
         up = [0 for _ in range(n)]
         down = [0 for _ in range(n)]
@@ -37,7 +39,7 @@ class Solution:
         return [up, down]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     upper = 5
     lower = 5
     colsum = [2, 1, 2, 0, 1, 0, 1, 2, 0, 1]

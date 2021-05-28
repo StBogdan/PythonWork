@@ -13,9 +13,9 @@ class Solution:
 
         snums = sorted(nums)
         triples = 0
-        for i in range(len(snums)-2):
+        for i in range(len(snums) - 2):
 
-            l = i+1
+            l = i + 1
             r = len(snums) - 1
 
             while l < r:
@@ -30,7 +30,6 @@ class Solution:
 
 
 class TestSolution(unittest.TestCase):
-
     def setUp(self):
         self.sol = Solution()
 

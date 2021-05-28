@@ -8,18 +8,17 @@ class Solution:
         if not nums:
             return -1
 
-
         l = 0
         h = n
         pivot = 0
         while l < h:
-            mid = (l+h) // 2
+            mid = (l + h) // 2
             x = nums[mid]
 
-            if mid+1 < n and x > nums[mid+1]:
+            if mid + 1 < n and x > nums[mid + 1]:
                 pivot = mid + 1
                 break
-            elif mid > 1 and x < nums[mid-1]:
+            elif mid > 1 and x < nums[mid - 1]:
                 pivot = mid
                 break
             elif x > nums[0]:
@@ -36,8 +35,8 @@ class Solution:
         l = 0
         h = n
         while l <= h:
-            mid = (l+h) // 2
-            i = (mid+pivot) % n
+            mid = (l + h) // 2
+            i = (mid + pivot) % n
             x = nums[i]
 
             if x == target:

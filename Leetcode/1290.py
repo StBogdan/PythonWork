@@ -18,8 +18,8 @@ class Solution:
         return int(nr, 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     head = ListNode(1)
-    head.next =ListNode(0)
+    head.next = ListNode(0)
     print(sol.getDecimalValue(head))

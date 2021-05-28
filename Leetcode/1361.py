@@ -2,7 +2,9 @@ from typing import List
 
 
 class Solution:
-    def validateBinaryTreeNodes(self, n: int, leftChild: List[int], rightChild: List[int]) -> bool:
+    def validateBinaryTreeNodes(
+        self, n: int, leftChild: List[int], rightChild: List[int]
+    ) -> bool:
         parents = {}
 
         for i in range(n):
@@ -11,7 +13,9 @@ class Solution:
             if i == left or i == right:
                 return False  # Self loop
 
-            if i in parents and (parents[i] == left or parents[i] == right):  # parent loop
+            if i in parents and (
+                parents[i] == left or parents[i] == right
+            ):  # parent loop
                 return False
 
             if left in parents or right in parents:
@@ -27,7 +31,7 @@ class Solution:
         return len(parents) == n - 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
 
     print("Case 1")

@@ -5,13 +5,14 @@ from typing import DefaultDict, List, Tuple
 # Time: O(n^2)
 # Sapce: O(n^2)
 
+
 class Solution:
     def tupleSameProduct(self, nums: List[int]) -> int:
         n = len(nums)
         prods_so_far = DefaultDict(int)
         tuples = 0
-        for i in range(n-1):
-            for j in range(i+1, n):
+        for i in range(n - 1):
+            for j in range(i + 1, n):
                 now_prod = nums[i] * nums[j]
 
                 # how many times we have previously seen this products (default 0)
@@ -26,8 +27,8 @@ class Solution:
         n = len(sarr)
 
         tuple_set = set()
-        for i in range(n-1):
-            for j in range(i+1, n):
+        for i in range(n - 1):
+            for j in range(i + 1, n):
                 prod = sarr[i] * sarr[j]
                 matches = self.find_prod_in_rest(sarr, prod, i, j)
                 for match_i, match_j in matches:
@@ -36,10 +37,11 @@ class Solution:
         # print(f"Found tuples {tuple_set}")
         return len(tuple_set) * 8
 
-    def find_prod_in_rest(self, sarr: List[int], prod: int,
-                          i: int, j: int) -> List[Tuple[int, int]]:
-        start = i+1
-        end = j-1
+    def find_prod_in_rest(
+        self, sarr: List[int], prod: int, i: int, j: int
+    ) -> List[Tuple[int, int]]:
+        start = i + 1
+        end = j - 1
         matches = []
 
         while start < end:
@@ -65,7 +67,7 @@ class Solution:
                 start += 1
 
         # print(f"For target {prod}, avoiding {i} and {j}, "
-            #   "got matches {matches}")
+        #   "got matches {matches}")
         return matches
 
 

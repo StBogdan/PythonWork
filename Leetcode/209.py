@@ -20,13 +20,13 @@ class Solution:
                 c_sum -= nums[start]
                 start += 1
 
-            if (c_sum >= s):
+            if c_sum >= s:
                 cmsa = min(cmsa, end - start + 1)
             end += 1
         return cmsa
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     folder = [2, 3, 1, 2, 4, 3]
     sol = Solution()
     print(f"Ans: {sol.minSubArrayLen(7, folder)}")

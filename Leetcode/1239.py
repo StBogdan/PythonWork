@@ -17,7 +17,6 @@ class Solution:
         return len(max(combo_list, key=len))
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     print(sol.maxLength(["cha", "r", "act", "ers"]))

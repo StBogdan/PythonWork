@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
         starts, ends = zip(*intervals)
@@ -27,8 +28,8 @@ if __name__ == "__main__":
     exs = [
         [[0, 30], [5, 10], [15, 20]],
         [[7, 10], [2, 4]],
-        [[1,1],[1,1]],
-        [[0,300],[5,255],[10,200],[2,50]],
+        [[1, 1], [1, 1]],
+        [[0, 300], [5, 255], [10, 200], [2, 50]],
     ]
     sol = Solution()
 

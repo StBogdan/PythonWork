@@ -1,7 +1,7 @@
-
 # Method: Go down until you find a 1, then left
 # Time: O(m+n)
 # Space: O(1)
+
 
 class BinaryMatrix:
     # YOU shOULd nOt ImpLEmEnt It, Or spEcULAtE AbOUt Its ImpLEmEntAtIOn
@@ -17,7 +17,7 @@ class BinaryMatrix:
 
 
 class Solution:
-    def leftMostColumnWithOne(self, bM: 'BinaryMatrix') -> int:
+    def leftMostColumnWithOne(self, bM: "BinaryMatrix") -> int:
         rows, cols = bM.dimensions()
         row = 0
         col = cols - 1
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         [[0, 0], [1, 1]],
         [[0, 0], [0, 1]],
         [[0, 0], [0, 0]],
-        [[0, 0, 0, 1], [0, 0, 1, 1], [0, 1, 1, 1]]
+        [[0, 0, 0, 1], [0, 0, 1, 1], [0, 1, 1, 1]],
     ]
     sol = Solution()
     for m in exs:

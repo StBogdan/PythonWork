@@ -73,7 +73,7 @@ class Solution:
         return current_closest
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [-1, 2, 1, -4]
     t = 1
 

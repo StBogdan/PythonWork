@@ -9,7 +9,7 @@ class Solution:
         bal = 0
         for i in range(n):
 
-            bal += 2*nums[i] - 1
+            bal += 2 * nums[i] - 1
             if bal in seen_balls:
                 cmax = max(cmax, i - seen_balls[bal])
             else:

@@ -3,7 +3,9 @@ class Solution:
         badpairs = []
         moves = 0
 
-        if (s1.count('x') + s2.count('x')) % 2 != 0 or (s1.count('y') + s2.count('y')) % 2 != 0:
+        if (s1.count("x") + s2.count("x")) % 2 != 0 or (
+            s1.count("y") + s2.count("y")
+        ) % 2 != 0:
             return -1
 
         for i in range(len(s1)):
@@ -34,4 +36,3 @@ class Solution:
         print(badpairs)
         moves += len(badpairs) * 2
         return moves
-

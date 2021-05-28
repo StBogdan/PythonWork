@@ -6,7 +6,7 @@ from typing import List
 class Solution:
     def tictactoe(self, moves: List[List[int]]) -> str:
 
-        winrar = lambda c :  "B" if c == "x" else "A"
+        winrar = lambda c: "B" if c == "x" else "A"
         board = [[0 for _ in range(3)] for _ in range(3)]
         move = False
         for [x, y] in moves:
@@ -34,13 +34,16 @@ class Solution:
                 print(f"Oh yeah result time on line {line}")
                 return winrar(line[0])
 
-        if (board[0][0] == board[1][1] == board[2][2] or board[2][0] == board[1][1] == board[0][2]) and board[1][
-            1] != 0:
+        if (
+            board[0][0] == board[1][1] == board[2][2]
+            or board[2][0] == board[1][1] == board[0][2]
+        ) and board[1][1] != 0:
             return winrar(board[1][1])
 
         return "Pending" if hasGaps else "Draw"
 
-if __name__ == '__main__':
-    grid =[[2,0],[1,0],[1,1],[0,2]]
+
+if __name__ == "__main__":
+    grid = [[2, 0], [1, 0], [1, 1], [0, 2]]
     sol = Solution()
     print(sol.tictactoe(grid))
