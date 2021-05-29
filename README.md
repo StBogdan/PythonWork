@@ -17,7 +17,8 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 
 | Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
-| 3   | [Longest Substring Without Repeating Characterse](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 	            | [Python](./Leetcode/3.py) 	| Medium | O(n) 	| O(n) 	|  	| 
+| 3  | [Longest Substring Without Repeating Characterse](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 	           | [Python](./Leetcode/3.py) 	    | Medium | O(n) 	| O(n) 	|  	| 
+| 5  | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                   | [Python](./Leetcode/5.py)      | Medium | O(n^2)       | O(n)  |       |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                                             | [Python](./Leetcode/31.py) 	| Medium | O(n) 	| O(1) 	|  	| 
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                                               | [Python](./Leetcode/56.py) 	| Medium | O(n*log(n)) 	| O(n) 	|  	| 
 | 98  | [ Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) 	                                                    | [Python](./Leetcode/98.py) 	| Medium | O(n) 	| O(depth) 	|  	|
@@ -27,6 +28,8 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/)                                                                                     | [Python](./Leetcode/198.py) 	| Medium | O(n) 	| O(1) 	|  	| 
 | 200 | [Number of islands](https://leetcode.com/problems/number-of-islands/) 	                                                                        | [Python](./Leetcode/200.py) 	| Medium | O(n\*m) 	| O(n\*m) 	|  	| 
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) 	                                                            | [Python](./Leetcode/239.py) 	| Hard 	 | O(n) 	| O(n) 	|  	| 
+| 246 | [Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/)                                                                 | [Python](./Leetcode/246.py)   | Easy | O(n)   | O(1)  |       |
+| 247 | [Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/)                                                           | [Python](./Leetcode/247.py)   | Medium | O(5^n)       | O(5^n)        |   |
 | 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) 	                                                                        | [Python](./Leetcode/253.py) 	| Medium | O(n*log(n)) 	| O(n) 	|  	|
 | 259 | [ 3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) 	                                                                                | [Python](./Leetcode/259.py) 	| Medium | O(n^2) 	| O(n) 	|  	| 
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/)                                                                                 | [Python](./Leetcode/268.py)   | Easy | O(n) | O(1) | |
