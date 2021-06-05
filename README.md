@@ -17,14 +17,19 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 
 | Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
+| 2  | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                                               | [Python](./Leetcode/2.py) 	| Medium | O(n) 	| O(n) 	|  	| 
 | 3  | [Longest Substring Without Repeating Characterse](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 	           | [Python](./Leetcode/3.py) 	    | Medium | O(n) 	| O(n) 	|  	| 
 | 5  | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                   | [Python](./Leetcode/5.py)      | Medium | O(n^2)       | O(n)  |       |
+| 15 | [3sum](https://leetcode.com/problems/3sum/)                                                                                                     | [Python](./Leetcode/15.py) 	| Medium | O(n^2) 	| O(n) 	|  	| 
+| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)                                             | [Python](./Leetcode/19.py) 	| Medium | O(n) 	| O(1) 	|  	| 
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                                             | [Python](./Leetcode/31.py) 	| Medium | O(n) 	| O(1) 	|  	| 
+| 43 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/)                                                                             | [Python](./Leetcode/43.py) 	| Medium | O(n\*m) 	| O(n + m) 	|  	| 
 | 56 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)                                                                               | [Python](./Leetcode/56.py) 	| Medium | O(n*log(n)) 	| O(n) 	|  	| 
 | 98  | [ Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) 	                                                    | [Python](./Leetcode/98.py) 	| Medium | O(n) 	| O(depth) 	|  	|
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) 	                    | [Python](./Leetcode/116.py) 	| Medium | O(n) 	| O(depth) 	|  	| 
 | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)                                                     | [Python](./leetcode/124.py)   | Hard   | O(n)     | O(d) | |
 | 152 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)                                                             | [Python](./Leetcode/152.py)      | Medium | O(n)         | O(1)  |       |
+| 159 | [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/) | [Python](./Leetcode/159.py) 	| Medium | O(n) 	| O(1) 	|  	| 
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) 	                                    | [Python](./Leetcode/188.py) 	| Hard 	 | O(n\*k) 	| O(n\*k) 	|  	|
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/)                                                                                     | [Python](./Leetcode/198.py) 	| Medium | O(n) 	| O(1) 	|  	| 
 | 200 | [Number of islands](https://leetcode.com/problems/number-of-islands/) 	                                                                        | [Python](./Leetcode/200.py) 	| Medium | O(n\*m) 	| O(n\*m) 	|  	| 
@@ -41,6 +46,7 @@ Problems related to the [Python tag](https://www.hackerrank.com/domains/python?f
 | 588 | [Design In-Memory File Systeme](https://leetcode.com/problems/design-in-memory-file-system/) 	                                                | [Python](./Leetcode/588.py) 	| Hard 	 | - 	| - 	| Design problem 	|
 | 647 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)                                                                 | [Python](./Leetcode/647.py) 	| Medium | O(n^2) 	| O(1) 	|  	| 
 | 829 | [Consecutive Numbers Sum](https://leetcode.com/problems/consecutive-numbers-sum/) 	                                                            | [Python](./Leetcode/829.py) 	| Hard 	 | O(n^(1/2)) 	| O(1) 	|  	|
+| 833 | [Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/)                                                         | [Python](./Leetcode/833.py) 	| Medium | O(n) 	| O(n) 	|  	| 
 | 852 | [ Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)                                                | [Python](./Leetcode/852.py) 	| Easy | O(log(n)) 	| O(1) 	|  	| 
 | 904 | [Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets/)                                                                         | [Python](./Leetcode/904.py) 	| Medium | O(n) 	| O(1) 	|  	| 
 | 929 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)                                                                 | [Python](./Leetcode/929.py) 	| Easy | O(n) 	| O(n) 	|  	| 

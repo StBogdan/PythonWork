@@ -1,5 +1,12 @@
 from typing import List
 
+# Name: 3sum
+# Link: https://leetcode.com/problems/3sum/
+# Method: Sort, check for each solution to 2sum, starting from edges
+# Time: O(n^2)
+# Space: O(n)
+# Difficulty: Medium
+
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
