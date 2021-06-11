@@ -1,3 +1,11 @@
+# Name: Diameter of Binary Tree
+# Link: https://leetcode.com/problems/diameter-of-binary-tree/
+# Method: Solving tidbit
+# Time: O(n)
+# Space: O(d)
+# Difficulty: Easy
+
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
