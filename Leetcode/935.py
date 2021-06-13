@@ -1,8 +1,12 @@
 import unittest
 
-# Method: Dynamic programming, construct ways to reach n-digit cals from previous ways (to build n-1 digits)
+# Name: Knight Dialer
+# Link: https://leetcode.com/problems/knight-dialer/
+# Method: Dynamic programming, construct ways to reach n-digit cals
+#         from previous ways (to build n-1 digits)
 # Time: O(n)
 # Space: O(1)
+# Difficulty: Medium
 
 
 class Solution:

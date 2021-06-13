@@ -1,5 +1,12 @@
 from typing import List
 
+# Name: Problem name
+# Link: https://leetcode.com/problems/problem-name
+# Method: Solving tidbit
+# Time: O(1)
+# Space: O(1)
+# Difficulty: чики-брики
+
 
 class TreeNode:
     def __init__(self, x):
@@ -15,25 +22,25 @@ class TreeNode:
 class Solution:
     def bstFromPreorder(self, preorder: List[int]) -> TreeNode:
         root = TreeNode(preorder[0])
-        cn = root
+        node_now = root
         for i in range(1, len(preorder)):
             print(f"Placing {preorder[i]}")
-            if preorder[i] < cn.val:
-                cn.left = TreeNode(preorder[i])
-                cn.left.parent = cn
-                cn = cn.left
+            if preorder[i] < node_now.val:
+                node_now.left = TreeNode(preorder[i])
+                node_now.left.parent = node_now
+                node_now = node_now.left
             else:
-                print(f"{preorder[i]} bigger than val: {cn.val}")
-                pcan = cn
-                while cn.parent and cn.parent.val < preorder[i]:
-                    print(f"Going up to cn.parent {cn.parent.val}")
-                    if cn.parent.right == None:
-                        pcan = cn.parent
-                    cn = cn.parent
+                print(f"{preorder[i]} bigger than val: {node_now.val}")
+                pcan = node_now
+                while node_now.parent and node_now.parent.val < preorder[i]:
+                    print(f"Going up to cn.parent {node_now.parent.val}")
+                    if node_now.parent.right == None:
+                        pcan = node_now.parent
+                    node_now = node_now.parent
                 print(f"At pcan: {pcan.val}")
                 pcan.right = TreeNode(preorder[i])
                 pcan.right.parent = pcan
-                cn = pcan.right
+                node_now = pcan.right
 
         return root
 

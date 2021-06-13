@@ -2,9 +2,12 @@ import unittest
 from collections import defaultdict
 
 
+# Name: LFU Cache
+# Link: https://leetcode.com/problems/lfu-cache/
 # Method: List of duble linked lists, direct dictionary reference to key-val node
 # Time: O(1) for getting and setting
 # Space: O(n)-ish
+# Difficulty: Hard
 
 
 class Node:
@@ -64,7 +67,7 @@ class LFUCache:
         self._update_count(node)
         return node.val
 
-    def _update_count(self, node):
+    def _update_count(self, node: Node) -> None:
         self.dlls[node.counter].pop(node)
 
         # If was min and now that dll empty, update min

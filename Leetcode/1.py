@@ -1,8 +1,11 @@
 from typing import List
 
+# Name: Two Sum
+# Link: https://leetcode.com/problems/two-sum/
 # Method: Store complement (for 3sum+, sorting works)
 # Time: O(n)
 # Space: O(n)
+# Difficulty: Easy
 
 
 class Solution:

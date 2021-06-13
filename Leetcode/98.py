@@ -1,9 +1,11 @@
+from typing import Optional
+
+# Name: Validate Binary Search Tree
+# Link: https://leetcode.com/problems/validate-binary-search-tree/
 # Method: Recursion, with edge case checking
 # Time: O(n), where n nodes
 # Space: O(depth) for recursion stack
-
-
-from typing import Optional
+# Difficulty: Medium
 
 
 class TreeNode:

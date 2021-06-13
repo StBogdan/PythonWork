@@ -1,6 +1,9 @@
+# Name: Consecutive Numbers Sum
+# Link: https://leetcode.com/problems/consecutive-numbers-sum/
 # Method: Math, model seq as N = x + x + 1 + ... x + k, loop over values of k
 # Time: O(N^(1/2))
 # Space: O(1)
+# Difficulty: Hard
 
 
 class Solution:

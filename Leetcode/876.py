@@ -1,3 +1,11 @@
+# Name: Middle of the Linked List
+# Link: https://leetcode.com/problems/middle-of-the-linked-list/
+# Method: Fast slow runner
+# Time: O(n)
+# Space: O(1)
+# Difficulty: Easy
+
+
 #  Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

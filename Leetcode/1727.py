@@ -1,9 +1,11 @@
 from typing import List
 
+# Name: Largest Submatrix With Rearrangements
 # Link: https://leetcode.com/problems/largest-submatrix-with-rearrangements/
 # Method: Ones-ending at, sort and find largest rectangle for each row
 # Time: O(n*m*log(m))
 # Space: O(n*m)
+# Difficulty: Medium
 
 
 class Solution:

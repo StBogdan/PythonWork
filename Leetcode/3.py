@@ -1,8 +1,11 @@
 import unittest
 
+# Name: Longest Substring Without Repeating Characters
+# Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 # Method: 2 pointers, sliding window and a set
 # Time: O(n)
 # Space: O(n)
+# Difficulty: Medium
 
 
 class Solution:

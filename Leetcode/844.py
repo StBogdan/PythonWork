@@ -1,6 +1,16 @@
+from typing import List
+
+# Name: Backspace String Compare
+# Link: https://leetcode.com/problems/backspace-string-compare/
+# Method: Stack, construct end result
+# Time: O(n)
+# Space: O(n)
+# Difficulty: Easy
+
+
 class Solution:
     @staticmethod
-    def text_editorize(raw_input: str):
+    def text_editorize(raw_input: str) -> List[chr]:
         buff_S = []
         for c in raw_input:
             if c == "#":
@@ -13,7 +23,7 @@ class Solution:
     def backspaceCompare(self, S: str, T: str) -> bool:
         r1 = "".join(self.text_editorize(S))
         r2 = "".join(self.text_editorize(T))
-        print(r1 + " -- " + r2)
+        # print(r1 + " -- " + r2)
         return r1 == r2
 
 
