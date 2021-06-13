@@ -1,5 +1,11 @@
 from typing import List
 
+# Name: Search in Rotated Sorted Array
+# Link: https://leetcode.com/problems/search-in-rotated-sorted-array/
+# Method: Binary search to find pivot, and then to find elem in sorted section
+# Time: O(log(n))
+# Space: O(1)
+# Difficulty: Medium
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:

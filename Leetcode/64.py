@@ -1,32 +1,39 @@
 from typing import List
 
+# Name: Minimum Path Sum
+# Link: https://leetcode.com/problems/minimum-path-sum/
+# Method: DP for minimum path to given matrix poz
+# Time: O(n\*m)
+# Space: O(n\*m)
+# Difficulty: Medium
+
 
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
-        n = len(grid)
-        m = len(grid[0])
+        rows = len(grid)
+        cols = len(grid[0])
 
-        sm = [[0] * m for _ in range(n)]
-        print(sm)
-
-        ts = 0
-        for j in range(m):
-            ts += grid[0][j]
-            sm[0][j] = ts
+        sm = [[0] * cols for _ in range(rows)]
+        # print(sm)
 
         ts = 0
-        for i in range(n):
-            ts += grid[i][0]
-            sm[i][0] = ts
+        for col in range(cols):
+            ts += grid[0][col]
+            sm[0][col] = ts
 
-        for i in range(1, n):
-            for j in range(1, m):
-                tgh = min(sm[i - 1][j], sm[i][j - 1])
-                sm[i][j] = tgh + grid[i][j]
+        ts = 0
+        for row in range(rows):
+            ts += grid[row][0]
+            sm[row][0] = ts
 
-        for row in sm:
-            print(row)
-        return sm[n - 1][m - 1]
+        for row in range(1, rows):
+            for col in range(1, cols):
+                to_get_here = min(sm[row - 1][col], sm[row][col - 1])
+                sm[row][col] = to_get_here + grid[row][col]
+
+        # for row in sm:
+        #     print(row)
+        return sm[rows - 1][cols - 1]
 
 
 if __name__ == "__main__":

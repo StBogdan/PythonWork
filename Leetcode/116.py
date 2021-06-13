@@ -1,12 +1,15 @@
 from collections import deque
 
-# Method: Modified BF
-# Time:  O(n) with n nodes
+
+# Name: Populating Next Right Pointers in Each Node
+# Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+# Method: Modified BFS
+# Time: O(n)
 # Space: O(log(depth))
+# Difficulty: Medium
+
 
 # Definition for a Node.
-
-
 class Node:
     def __init__(
         self,

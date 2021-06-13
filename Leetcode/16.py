@@ -1,11 +1,18 @@
 from typing import List
 
+# Name: 3Sum Closest
+# Link: https://leetcode.com/problems/3sum-closest/
+# Method: Like 3sum, but keep track of best candidate
+# Time: O(n^2)
+# Space: O(n)
+# Difficulty: Medium
+
 
 class Solution:
     def threeSumClosest_inital(self, nums: List[int], target: int) -> int:
         arr = sorted(nums)
-        print(arr)
         n = len(arr)
+
         current_dist = -1
         current_closest = -1
         for i in range(n):
@@ -56,20 +63,21 @@ class Solution:
             right = n - 1
 
             while left < i < right:
-                c2s = arr[left] + arr[i] + arr[right]
-                if c2s > target:
+                twosum_curr = arr[left] + arr[i] + arr[right]
+                if twosum_curr > target:
                     right -= 1
-                elif c2s < target:
+                elif twosum_curr < target:
                     left += 1
                 else:
                     return target
+
                 if current_dist > 0:
-                    if abs(target - c2s) < current_dist:
-                        current_dist = abs(c2s - target)
-                        current_closest = c2s
+                    if abs(target - twosum_curr) < current_dist:
+                        current_dist = abs(twosum_curr - target)
+                        current_closest = twosum_curr
                 else:  # Initial call
-                    current_dist = abs(c2s - target)
-                    current_closest = c2s
+                    current_dist = abs(twosum_curr - target)
+                    current_closest = twosum_curr
         return current_closest
 
 

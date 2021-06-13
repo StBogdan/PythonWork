@@ -1,6 +1,10 @@
-# Method: Recursive, get maximum path with a node in it, feed up (check max if going down again)
+# Name: Binary Tree Maximum Path Sum
+# Link: https://leetcode.com/problems/binary-tree-maximum-path-sum/
+# Method: Recursive, get maximum path with this node in it, feed up (check max if going down again)
 # Time: O(n)
 # Space: O(d) where d = tree depth (worst case also n)
+# Difficulty: Hard
+
 
 # Definition for a binary tree node.
 class TreeNode:

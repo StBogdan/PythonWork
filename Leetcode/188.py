@@ -1,9 +1,13 @@
 from typing import List
 import unittest
 
+
+# Name: Best Time to Buy and Sell Stock IV
+# Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
 # Method: Dynamic programming, crying and reading the solutions
 # Time: O(n*k)
 # Space: O(n*k)
+# Difficulty: Hard
 
 
 class Solution:
