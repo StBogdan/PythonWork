@@ -1,18 +1,23 @@
 from collections import deque
 
-# Method: Modified BF
-# Time:  O(n) with n nodes
+
+# Name: Populating Next Right Pointers in Each Node
+# Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+# Method: Modified BFS
+# Time: O(n)
 # Space: O(log(depth))
+# Difficulty: Medium
+
 
 # Definition for a Node.
-
-
 class Node:
-    def __init__(self,
-                 val: int = 0,
-                 left: 'Node' = None,
-                 right: 'Node' = None,
-                 next: 'Node' = None):
+    def __init__(
+        self,
+        val: int = 0,
+        left: "Node" = None,
+        right: "Node" = None,
+        next: "Node" = None,
+    ):
         self.val = val
         self.left = left
         self.right = right
@@ -20,7 +25,7 @@ class Node:
 
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
+    def connect(self, root: "Node") -> "Node":
         if not root:
             return None
 
@@ -39,7 +44,7 @@ class Solution:
 
         return root
 
-    def brige_builder_rec(node: 'Node') -> 'Node':
+    def brige_builder_rec(node: "Node") -> "Node":
 
         if not node.left:  # We're at a leaf
             return None
@@ -55,7 +60,7 @@ class Solution:
         brige_builder_rec(node.left)
         brige_builder_rec(node.right)
 
-    def brige_builder_next(root: 'Node') -> 'Node':
+    def brige_builder_next(root: "Node") -> "Node":
         if not root:
             return None
 

@@ -13,8 +13,8 @@ class Node:
     def __str__(self):
         return f"Val:{self.value} + Path:{self.full_path} + Children:{self.children} + IsLeaf:{self.is_leaf}"
 
-class Solution:
 
+class Solution:
     def removeSubfolders(self, folder: List[str]) -> List[str]:
         known_folder = Node("", False, "")
         non_subdirs = []
@@ -30,7 +30,9 @@ class Solution:
                 if indiv in cur_node.children:
                     cur_node = cur_node.children[indiv]
                 else:
-                    cur_node.children[indiv] = Node(indiv, False, cur_node.full_path+"/"+indiv)
+                    cur_node.children[indiv] = Node(
+                        indiv, False, cur_node.full_path + "/" + indiv
+                    )
                     cur_node = cur_node.children[indiv]
             cur_node.is_leaf = True
 
@@ -49,7 +51,7 @@ class Solution:
         return non_subdirs
 
 
-if __name__ == '__main__':
-    folder = ["/a/b","/a/b/c","/a/b/ca","/a/b/d"]
+if __name__ == "__main__":
+    folder = ["/a/b", "/a/b/c", "/a/b/ca", "/a/b/d"]
     sol = Solution()
     print(f"Ans: {sol.removeSubfolders(folder)}")

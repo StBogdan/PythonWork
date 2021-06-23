@@ -17,7 +17,7 @@ class Solution:
         n = len(nums)
 
         ind_now = n - 2
-        while 0 <= ind_now and nums[ind_now] >= nums[ind_now+1]:
+        while 0 <= ind_now and nums[ind_now] >= nums[ind_now + 1]:
             ind_now -= 1
 
         if ind_now < 0:
@@ -27,11 +27,11 @@ class Solution:
             swap_elem = nums[ind_now]
 
             ind_now += 1
-            while ind_now < n-1 and nums[ind_now+1] > swap_elem:
+            while ind_now < n - 1 and nums[ind_now + 1] > swap_elem:
                 ind_now += 1
 
             nums[ind_now], nums[swap_poz] = nums[swap_poz], nums[ind_now]
-            self.reverse_list(nums, swap_poz+1, n - 1)
+            self.reverse_list(nums, swap_poz + 1, n - 1)
 
     def reverse_list(self, nums, start, end):
         midpoint = (end - start + 1) // 2
@@ -42,7 +42,6 @@ class Solution:
 
 
 class TestSolution(unittest.TestCase):
-
     def setUp(self):
         self.sol = Solution()
 

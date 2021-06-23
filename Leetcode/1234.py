@@ -2,10 +2,14 @@ from typing import List
 
 
 class Solution:
-
     def balancedString(self, s: str) -> int:
         n = len(s)
-        budget = {'Q': s.count("Q"), 'W': s.count("W"), 'E': s.count("E"), 'R': s.count("R")}
+        budget = {
+            "Q": s.count("Q"),
+            "W": s.count("W"),
+            "E": s.count("E"),
+            "R": s.count("R"),
+        }
 
         start = 0
         min_win = n + 1
@@ -20,7 +24,7 @@ class Solution:
         return min_win
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     ans = sol.balancedString("QQQW")
     print(f"Ans: {ans}")

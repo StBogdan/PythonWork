@@ -1,4 +1,3 @@
-
 # Name: Fruit Into Baskets
 # Link: https://leetcode.com/problems/fruit-into-baskets/
 # Method: Keep track of start of seq of prev element (if a third seen, restart from there)
@@ -25,10 +24,7 @@ class Solution:
             else:
                 max_collect = max(max_collect, i - start)
                 start = current_fruits[prev]
-                current_fruits = {
-                    fruit: i,
-                    prev: current_fruits[prev]
-                }
+                current_fruits = {fruit: i, prev: current_fruits[prev]}
 
             prev = fruit
 

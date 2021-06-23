@@ -3,14 +3,13 @@ from typing import List
 
 
 class Solution:
-
     def closestDivisors(self, num: int) -> List[int]:
-        smolest_diff = num*2
+        smolest_diff = num * 2
         smolest_vals = []
 
         targets = [num + 1, num + 2]
         for target in targets:
-            for i in range(int(sqrt(target)+1), 0, -1):
+            for i in range(int(sqrt(target) + 1), 0, -1):
                 if not target % i:
                     j = target // i
                     if abs(i - j) < smolest_diff:
@@ -21,7 +20,7 @@ class Solution:
         return smolest_vals
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
 
     assert [5, 25] == sol.closestDivisors(123)

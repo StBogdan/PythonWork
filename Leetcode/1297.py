@@ -3,16 +3,18 @@ from typing import List
 import cProfile
 import time
 
+
 def timeme(method):
     def wrapper(*args, **kw):
         startTime = int(round(time.time() * 1000))
         result = method(*args, **kw)
         endTime = int(round(time.time() * 1000))
 
-        print(endTime - startTime,'ms')
+        print(endTime - startTime, "ms")
         return result
 
     return wrapper
+
 
 class Solution:
     def maxFreq(self, s: str, maxLetters: int, minSize: int, maxSize: int) -> int:
@@ -23,7 +25,7 @@ class Solution:
                 if i + wide > n:
                     break
 
-                c_ss = s[i: i + wide]
+                c_ss = s[i : i + wide]
                 print(f"Now at c_ss {c_ss}")
                 if len(set(c_ss)) <= maxLetters:
                     occ_dict[c_ss] += 1
@@ -33,7 +35,8 @@ class Solution:
         print(occ_dict)
         return max(occ_dict.values(), default=0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
 
     @timeme
     def solution_run():

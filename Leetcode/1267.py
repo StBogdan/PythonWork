@@ -44,7 +44,7 @@ class Solution:
         return reach
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     grid = [[1, 0], [1, 1]]
     sol = Solution()
     print(sol.countServers(grid))

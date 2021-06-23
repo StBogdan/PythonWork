@@ -1,12 +1,21 @@
+# Name: Middle of the Linked List
+# Link: https://leetcode.com/problems/middle-of-the-linked-list/
+# Method: Fast slow runner
+# Time: O(n)
+# Space: O(1)
+# Difficulty: Easy
+
+
 #  Definition for singly-linked list.
 class ListNode:
-     def __init__(self, x):
-         self.val = x
-         self.next = None
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
 
 class Solution:
     def middleNode(self, head: ListNode) -> ListNode:
-        slowboie  = head
+        slowboie = head
         fastboye = head
         while fastboye != None:
             fastboye = fastboye.next
@@ -21,9 +30,8 @@ class Solution:
 if __name__ == "__main__":
     sol = Solution()
     head = ListNode(3)
-    head.next= ListNode(4)
+    head.next = ListNode(4)
     head.next.next = ListNode(5)
     head.next.next.next = ListNode(6)
-
 
     print(sol.middleNode(head))

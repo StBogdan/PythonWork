@@ -53,9 +53,16 @@ def build_lc_line(number: str,
                   space_complexity: str,
                   notes: str = "") -> str:
     problem_link = f"[{title}]({url})"
-    return f"| {number} | {problem_link:143} | [Python](./Leetcode/{number}.py) 	| " + \
+    return f"| {number:4} | {problem_link:143} | [Python](./Leetcode/{number}.py) 	| " + \
         f"{difficulty} | {time_complexity} 	| {space_complexity} 	| {notes} 	| "
 
+
+def file_to_int(lc_file: str) -> int:
+    try:
+        file_name , _ = lc_file.rsplit(".", 1) 
+        return int(file_name)
+    except ValueError:
+        return 999999
 
 @cli.command()
 @click.option("--outputfile", "-o")
@@ -69,7 +76,9 @@ def backfill_lc(outputfile: str):
     entries = []
     all_py_solutions = [x for x in os.listdir(lc_folder) if x.endswith(".py")]
 
-    for file in all_py_solutions:
+    all_py_solutions_sorted = sorted(all_py_solutions, key=file_to_int)
+
+    for file in all_py_solutions_sorted:
         print(f"Looking at file {file:20}", end="... ")
         with open(os.path.join(lc_folder, file), "r") as f:
             maybe_entry = get_entry_from_file(f)

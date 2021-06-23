@@ -1,5 +1,12 @@
 from typing import List
 
+# Name: 3sum
+# Link: https://leetcode.com/problems/3sum/
+# Method: Sort, check for each solution to 2sum, starting from edges
+# Time: O(n^2)
+# Space: O(n)
+# Difficulty: Medium
+
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
@@ -24,12 +31,9 @@ class Solution:
         return [list(tpl) for tpl in combos]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums1 = [-1, 0, 1, 2, -1, -4]
-    ans1 = [
-        [-1, 0, 1],
-        [-1, -1, 2]
-    ]
+    ans1 = [[-1, 0, 1], [-1, -1, 2]]
 
     nums2 = [3, 0, -2, -1, 1, 2]
 
