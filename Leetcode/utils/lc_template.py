@@ -7,5 +7,5 @@
 
 
 class Solution:
-    def to_the_thing(self):
+    def do_the_thing(self):
         pass
