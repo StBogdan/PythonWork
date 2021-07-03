@@ -1,3 +1,5 @@
+from typing import List
+
 # Name: Unique Email Addresses
 # Link: https://leetcode.com/problems/unique-email-addresses/
 # Method: Process email, store in set
