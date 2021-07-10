@@ -8,7 +8,9 @@
 ### CodeForces
 | Nr. 	| Title 	| Solution 	| Difficulty 	| Time 	| Space 	| Notes 	|
 |:---:	|:-----:	|:--------:	|------------	|:----:	|:-----:	|:-----:	|
-| 1287A 	| [Angry Students](https://codeforces.com/problemset/problem/1287/A) 	|  	| A 	|  	|  	|  	|
+| 1285A | [Mezo Playing Zoma](https://codeforces.com/problemset/problem/1285/A)                                                                           | [Python](./CodeForces/1285A.py)  | A | O(n)                | O(1)   |       |
+| 1287A | [Angry Students](https://codeforces.com/problemset/problem/1287/A)                                                                              | [Python](./CodeForces/1287A.py)  | A | O(n)                | O(1)   |       |
+| 1287B | [Hyperset](https://codeforces.com/problemset/problem/1287/B)                                                                                    | [Python](./CodeForces/1287B.py)  | B | O(n^2 \* k)         | O(n\*k)        |       |
 
 ### HackerRank
 Problems related to the [Python tag](https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python)
