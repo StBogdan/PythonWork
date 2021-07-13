@@ -1,10 +1,13 @@
-import collections
-from typing import DefaultDict, List, Mapping, Tuple
+from typing import DefaultDict, List
 
-
+# Name: The Most Similar Path in a Graph
+# Link: https://leetcode.com/problems/the-most-similar-path-in-a-graph/
 # Method: Dynamic programming, solve subproblem of partial paths
-# Time: O(n*m*E), where E is the number of edges
-# Space: O(n*m) where n is len(names) and is len(targetPath) or O(n^2) is graph storage bigger
+# Time: O(n\*m\*E)
+# Space: O(n\*m)
+# Difficulty: Hard
+# Notes: E is the number of edges, n is len(names) and m is len(targetPath)
+#         Space can be O(n^2) is graph storage bigger
 
 
 class Solution:

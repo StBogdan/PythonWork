@@ -1,10 +1,11 @@
 from typing import DefaultDict, List, Tuple
 
+# Name: Tuple with Same Product
 # Link: https://leetcode.com/problems/tuple-with-same-product/
 # Method: Counter of previous products
 # Time: O(n^2)
-# Sapce: O(n^2)
-
+# Space: O(n^2)
+# Difficulty: Medium
 
 class Solution:
     def tupleSameProduct(self, nums: List[int]) -> int:
