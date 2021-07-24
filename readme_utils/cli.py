@@ -1,5 +1,6 @@
-from readme_utils import build_lc_line, file_to_int, get_entry_from_file,build_cf_line
+from readme_utils import build_lc_line, file_to_int, get_entry_from_file, build_cf_line
 import os, click
+
 
 @click.group()
 def cli():
@@ -14,29 +15,38 @@ def cli():
 @click.option("--time_complexity", "-tc")
 @click.option("--space_complexity", "-sc")
 @click.option("--notes")
-def table_entry_lc(number: str,
-                   title: str,
-                   url: str,
-                   difficulty: str,
-                   time_complexity: str,
-                   space_complexity: str,
-                   notes: str = ""):
-    """ Create a markdown table entry from params"""
-    markdown_line = build_lc_line(number, title, url, difficulty,
-                                  time_complexity, space_complexity, notes)
+def table_entry_lc(
+    number: str,
+    title: str,
+    url: str,
+    difficulty: str,
+    time_complexity: str,
+    space_complexity: str,
+    notes: str = "",
+):
+    """Create a markdown table entry from params"""
+    markdown_line = build_lc_line(
+        number, title, url, difficulty, time_complexity, space_complexity, notes
+    )
     click.echo(markdown_line)
+
 
 @cli.command()
 @click.option("--outputfile", "-o")
-@click.option('--site', '-s', type=click.Choice(['leetcode', 'codeforces'], case_sensitive=False))
-def backfill_lc(outputfile: str, site:str):
-    """Look in the Leetcode folder, 
+@click.option(
+    "--site",
+    "-s",
+    required=True,
+    type=click.Choice(["leetcode", "codeforces"], case_sensitive=False),
+)
+def backfill_lc(outputfile: str, site: str):
+    """Look in the Leetcode folder,
     generate table entries for files there:
     If they have expected lines
     """
-    site_folders= {
-        "leetcode": ("Leetcode",file_to_int, build_lc_line),
-        "codeforces": ("CodeForces", file_to_int, build_cf_line)
+    site_folders = {
+        "leetcode": ("Leetcode", file_to_int, build_lc_line),
+        "codeforces": ("CodeForces", file_to_int, build_cf_line),
     }
 
     problems_folder, ordering_func, line_str_func = site_folders.get(site)
@@ -53,8 +63,7 @@ def backfill_lc(outputfile: str, site:str):
             if maybe_entry:
                 entries.append(maybe_entry)
 
-    print(f"Out of {len(list(all_py_solutions))}, "
-          f"got descriptions for {len(entries)}")
+    print(f"Out of {len(list(all_py_solutions))} got descriptions for {len(entries)}")
 
     if outputfile:
         with open(outputfile, "w+") as of:
