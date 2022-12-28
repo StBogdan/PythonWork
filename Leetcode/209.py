@@ -1,29 +1,35 @@
 from typing import List
 
+# Name: Minimum Size Subarray Sum
+# Link: https://leetcode.com/problems/minimum-size-subarray-sum/
+# Method: Sliding window, once target sum is passed, reduce from left side as much as possible
+# Time: O(n)
+# Space: O(1)
+# Difficulty: Medium
 
 class Solution:
-    def minSubArrayLen(self, s: int, nums: List[int]) -> int:
-        if sum(nums) < s:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        if sum(nums) < target:
             return 0
-        elif sum(nums) == s:
+        elif sum(nums) == target:
             return len(nums)
 
         start = 0
         end = 0
-        c_sum = 0
-        cmsa = len(nums) + 1
+        sum_now = 0
+        min_size_now = len(nums) + 1
 
         while end < len(nums):
-            c_sum += nums[end]
+            sum_now += nums[end]
 
-            while c_sum - nums[start] >= s and start <= end:
-                c_sum -= nums[start]
+            while sum_now - nums[start] >= target and start <= end:
+                sum_now -= nums[start]
                 start += 1
 
-            if c_sum >= s:
-                cmsa = min(cmsa, end - start + 1)
+            if sum_now >= target:
+                min_size_now = min(min_size_now, end - start + 1)
             end += 1
-        return cmsa
+        return min_size_now
 
 
 if __name__ == "__main__":

@@ -65,10 +65,10 @@ def get_entry_from_file(file: IO, line_gen_func: Callable) -> Optional[str]:
         # print(f"Looking for {name} w/ pattern {pattern}, got match {match}")
 
     if len(problem_details) == len(PROPERTY_PATTERNS):
-        print("Found all of them, creating markdown")
+        print("Properties present, creating markdown")
 
         _, filename = os.path.split(file.name)
         number, _ = filename.split(".")
         return line_gen_func(number, **problem_details)
     else:
-        print(f"Properties missing, found: {problem_details}")
+        print(f"Properties missing (found {len(problem_details)}/{len(PROPERTY_PATTERNS)}), found: {list(problem_details.keys())}")

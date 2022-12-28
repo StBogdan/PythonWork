@@ -1,6 +1,10 @@
 from readme_utils import build_lc_line, file_to_int, get_entry_from_file, build_cf_line
 import os, click
 
+# Command Line Interface for geneating the table in the readme file
+# Read the files in the LeetCode folder and parses the comment on top
+# Example use (use `--help` for more options): 
+# python3 -u "/home/bogdan/PythonWork/readme_utils/cli.py" backfill-lc -s leetcode -o local/test.txt
 
 @click.group()
 def cli():
@@ -57,7 +61,7 @@ def backfill_lc(outputfile: str, site: str):
     all_py_solutions_sorted = sorted(all_py_solutions, key=ordering_func)
 
     for file in all_py_solutions_sorted:
-        print(f"Looking at file {file:20}", end="... ")
+        print(f"File: {file:15}", end=" Processing result: ")
         with open(os.path.join(problems_folder, file), "r") as f:
             maybe_entry = get_entry_from_file(f, line_str_func)
             if maybe_entry:

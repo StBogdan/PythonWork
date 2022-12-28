@@ -1,27 +1,35 @@
+
+# Name: Min Stack
+# Link: https://leetcode.com/problems/min-stack/
+# Method: Use a secondary stack, that holds the minimum element
+# Time: O(1)
+# Space: O(n)
+# Difficulty: Medium
+
 class MinStack:
     def __init__(self):
         """
         initialize your data structure here.
         """
         self.stack = []
-        self.cumin = []
+        self.minStack = []
 
     def push(self, x: int) -> None:
         self.stack.append(x)
-        if self.cumin and self.cumin[-1] < x:
-            self.cumin.append(self.cumin[-1])
+        if self.minStack and self.minStack[-1] < x:
+            self.minStack.append(self.minStack[-1])
         else:
-            self.cumin.append(x)
+            self.minStack.append(x)
 
     def pop(self) -> None:
         self.stack.pop()
-        self.cumin.pop()
+        self.minStack.pop()
 
     def top(self) -> int:
         return self.stack[-1]
 
     def getMin(self) -> int:
-        return self.cumin[-1]
+        return self.minStack[-1]
 
 
 if __name__ == "__main__":
